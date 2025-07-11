@@ -36,6 +36,7 @@ const translator = new deepl.Translator(process.env.DEEPL_API_TOKEN);
 async function translateText(richTextArray, from, to) {
   for (const each of richTextArray) {
     if (each.plain_text) {
+	  await new Promise(r => setTimeout(r, 300)); // ← Затримка 300 мс
       const result = await translator.translateText(each.plain_text, from, to);
       each.plain_text = result.text;
       if (each.text) {
