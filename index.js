@@ -73,6 +73,7 @@ const supportedFromLangs = [
   "SV", // Swedish
   "TR", // Turkish
   "ZH", // Chinese
+  "UK", // Ukraine
 ];
 
 const supportedToLangs = [
@@ -104,6 +105,7 @@ const supportedToLangs = [
   "SV", // Swedish
   "TR", // Turkish
   "ZH", // Chinese
+  "UK", // Ukraine
 ];
 
 const printableSupportedFromLangs = supportedFromLangs
